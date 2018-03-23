@@ -16,19 +16,19 @@ namespace Multas.Models
         public DateTime DataMulta { get; set; }
         //++++++++++++++++++++++++++++++++++++++++++++
         //chaves FK - dados do agente
-        [ForeignKey("Agentes")]
+        [ForeignKey("Agente")]
         public int AgenteFK { get; set; }
-        public virtual Agentes Agentes { get; set; }//virtual para poder usar "LazyLoading"
+        public virtual Agentes Agente { get; set; }//virtual para poder usar "LazyLoading"
 
         //chaves FK - dados do condutor
-        [ForeignKey("Condutores")]
+        [ForeignKey("Condutor")]
         public int CondutorFK { get; set; }
-        public virtual Condutores Condutores { get; set; }//virtual para poder usar "LazyLoading"
+        public virtual Condutores Condutor { get; set; }//virtual para poder usar "LazyLoading"
 
         //chaves FK - dados da viatura
-        [ForeignKey("Viaturas")]
+        [ForeignKey("Viatura")]
         public int ViaturaFK { get; set; }
-        public virtual Viaturas Viaturas { get; set; }//virtual para poder usar "LazyLoading"
+        public virtual Viaturas Viatura { get; set; }//virtual para poder usar "LazyLoading"
 
     }
 }

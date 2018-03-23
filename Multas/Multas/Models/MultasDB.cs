@@ -6,10 +6,10 @@ using System.Web;
 
 namespace Multas.Models
 {
-    public class MultasDB : DbContext
+    public class MultasDb : DbContext
     {
         //criar constructor
-        public MultasDB() : base("MultasDbConnectionString") { }
+        public MultasDb() : base("MultasDbConnectionString") { }
 
         //definir as tabelas da minha base de dados
         public virtual DbSet<Viaturas> Viaturas { get; set; }

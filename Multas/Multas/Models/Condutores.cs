@@ -14,7 +14,7 @@ namespace Multas.Models
         }
 
         public int ID { get; set; } // PK
-        public int Nome { get; set; }
+        public string Nome { get; set; }
         public string BI { get; set; }
         public string Telemovel { get; set; }
         public DateTime DataNasc { get; set; }
