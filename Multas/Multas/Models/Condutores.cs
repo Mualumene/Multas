@@ -1,0 +1,28 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+namespace Multas.Models
+{
+    public class Condutores
+    {
+        //criar constructor
+        public Condutores()
+        {
+            ListaMultas = new HashSet<Multas>();
+        }
+
+        public int ID { get; set; } // PK
+        public int Nome { get; set; }
+        public string BI { get; set; }
+        public string Telemovel { get; set; }
+        public DateTime DataNasc { get; set; }
+        public string NumCartaConducao { get; set; }
+        public string LocalEmissao { get; set; }
+        public DateTime DataValidadeCarta { get; set; }
+
+        //Criar lista de multas aplicadas pelo condutor
+        public virtual ICollection<Multas> ListaMultas { get; set; }
+    }
+}
